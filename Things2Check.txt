@@ -1,0 +1,9 @@
+Things2Check.txt
+Here are some issues that need to be fixed: 
+- When last inspection is marked as passed failed once is marked as No but sometimes it is not legit because
+the inspection passed has been set automatically because the permit status is finalied and there are no inspections.(see Tulare)
+- Standarize permit status (df = utils.assign_permit_status(df)). That it because.. it needs the permit status to be assigned but.. 
+when you do it after assigning the permit status, it assigns No to everything.. I need to do it before.
+- The inspections are sometimes not properly geting in the right order due to the format of the date, standarize (within the Merge_Inspections function) before anything! 
+- Problems with Merge_Inspections. It gets rid of the inspections when the last_inspections_columns function is previously assigned. 
+- When recovering the last inspoections, the note from a previous inspection shows up when last inspection does not have a not, fix this. 
